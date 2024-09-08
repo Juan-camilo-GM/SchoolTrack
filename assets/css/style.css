@@ -1,0 +1,150 @@
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;  
+    
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.custom-form {
+    background-color: transparent;
+    padding: 20px; 
+    border-radius: 40px; 
+}
+
+.nav-link:hover {
+    background-color: #0c6cfc; /* Cambia el color de fondo al pasar el ratón sobre los enlaces */
+    color: #ffffff; /* Cambia el color del texto al pasar el ratón sobre los enlaces */
+}
+
+.boton-circular {
+    width: 100px;
+    height: 100px;
+    margin: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .icono {
+    font-size: 30px;
+  }
+  .nombre-boton {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .boton-circular:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .fixed-right {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+}
+
+.btn-custom {
+  width: 100%;
+  margin-bottom: 10px;
+  border-color: black;
+
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-column {
+  flex: 0 0 45%; /* Para que cada columna ocupe un ancho fijo */
+  margin: 25px; /* Espacio entre columnas */
+}
+
+.efecto1 {
+  display: inline-block;
+  transform: perspective(1px) translate(0);
+  box-shadow: 0 0 1px t=rgba(0, 0, 0, 0.0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.efecto1::before{
+  content: "";
+  position:absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0c6cfc;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.efecto1:hover{
+  color: #ffffff;
+}
+.efecto1:hover::before{
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Aumenta el espacio entre los botones */
+  margin-top: 20px;
+}
+.text-button {
+  width: 150px;
+  height: 150px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.text-button i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.text-button:hover {
+  background-color: #0056b3;
+}

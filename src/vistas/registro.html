@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body style="background: url('../../assets/imagenes/fondo.jpg') no-repeat center center fixed; background-size: cover;"></body>
+
+    <nav class="navbar bg-primary">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="../../index.html" style="font-family: Arial, Helvetica, sans-serif; color: aliceblue;">
+        <img src="../../assets/imagenes/escudo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center ms-4">
+        Institución Educativa  Artes y Letras
+        </a>
+    </div>
+    </nav>
+    <div class="container">
+        <form action="../../registro.php" method="POST" class="custom-form justify-content-center">
+            <input type="hidden" name="origin" value="index">
+        <h4 class="titulo text-center m-3" style="font-family: Arial, Helvetica, sans-serif; color: rgb(4, 4, 125);">REGISTRATE </h4>
+        <br>
+
+        <div class="container">
+                <div class="form-group row justify-content-center">
+                    <div class="col-6">
+                        <select class="form-select shadow" name="usuario_rol" aria-label="Default select example" required>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Profesor</option>
+                            <option value="3">Administrador</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row justify-content-center">
+                    <div class="col-6">
+                        <input type="text" class="form-control shadow" name="usuario_nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row justify-content-center">
+                    <div class="col-6">
+                        <input type="text" class="form-control shadow" name="usuario_apellido" id="apellidos" placeholder="Ingrese sus apellidos" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row justify-content-center">
+                    <div class="col-6">
+                        <input type="number" class="form-control shadow" name="usuario_cedula" id="cedula" placeholder="Ingrese su cédula o TI" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row justify-content-center">
+                    <div class="col-6">
+                        <input type="email" class="form-control shadow" name="usuario_email" id="email" placeholder="Ingrese su correo electrónico" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row justify-content-center">
+                    <div class="col-6">
+                        <input class="form-control shadow"  type="text" name="nacimiento" placeholder="Fecha de Nacimiento" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row justify-content-center">
+                    <div class="col-6">
+                        <input type="password" class="form-control shadow" name="usuario_contraseña" id="contrasena" placeholder="Ingrese su contraseña" required>
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group row">
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg shadow">Registrarse</button>
+                    </div>
+                    <br><br>
+                </div>
+        </div>
+        <br>
+        </form>
+    </div>
+
+    
+    <footer class="bg-primary text-white py-4">
+        <div class="container-fluid text-center">
+            <p>© Juan Camilo González Muñoz</p>
+            <p>2024</p>
+        </div>
+    </footer>      
+    
+<body>
+    
+</body>
+</html>
