@@ -60,7 +60,7 @@ if(isset($_GET['id'])) {
 <nav class="navbar bg-primary">
     <div class="container-fluid ">
     <a class="navbar-brand" href="../../index.html" style="font-family: Arial, Helvetica, sans-serif; color: aliceblue;">
-        <img src="../assets/imagenes/escudo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center ms-4">
+        <img src="../../assets/imagenes/escudo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center ms-4">
         Institución Educativa  Artes y Letras
     </a>
     <a href="#" class="d-flex align-items-center me-5" style="text-decoration: solid;">
