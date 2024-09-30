@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirigir según el origen
             switch($origin) {
                 case 'index':
-                    header("Location: index.html?status=success");
+                    header("Location: ../../index.html?status=success");
                     break;
                 case 'admin':
                     header("Location: /prueba/src/vistas/gestion-usuario.php?status=success");

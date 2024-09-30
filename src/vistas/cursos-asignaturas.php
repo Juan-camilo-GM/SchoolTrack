@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body style="background: url('../../assets/imagenes/fondo.jpg') no-repeat center center fixed; background-size: cover;">
-<?php if (isset($_GET['status']) && $_GET['status'] == 'success'): ?>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        Acción realizada con éxito
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div> 
-<?php   endif;  ?>
-
 <nav class="navbar bg-primary">
     <div class="container-fluid ">
     <a class="navbar-brand" href="../../index.html" style="font-family: Arial, Helvetica, sans-serif; color: aliceblue;">
@@ -59,8 +52,8 @@
     <div class="card" style="width: 18rem;">
   <img src="../../assets/imagenes/primergrado1.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Primero</h5>
-    <a href="#" class="btn btn-primary">Entrar</a>
+    <h5 class="card-title">Grado Primero</h5>
+    <a href="../../src/vistas/curso-primero.php" class="btn btn-primary">Entrar</a>
   </div>
 </div>
 <br>
@@ -69,7 +62,7 @@
     <div class="card" style="width: 18rem;">
   <img src="../../assets/imagenes/segundogrado.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Segundo</h5>
+    <h5 class="card-title">Grado Segundo</h5>
     <a href="#" class="btn btn-primary">Entrar</a>
   </div>
 </div>
@@ -79,7 +72,7 @@
     <div class="card" style="width: 18rem;">
   <img src="../../assets/imagenes/tercergrado.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Tercero</h5> 
+    <h5 class="card-title">Grado Tercero</h5> 
     <a href="#" class="btn btn-primary">Entrar</a>
   </div>
 </div>
@@ -89,7 +82,7 @@
     <div class="card" style="width: 18rem;">
   <img src="../../assets/imagenes/cuartogrado.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Cuarto</h5>
+    <h5 class="card-title">Grado Cuarto</h5>
     <a href="#" class="btn btn-primary">Entrar</a>
   </div>
 </div>  
